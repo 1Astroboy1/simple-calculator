@@ -8,7 +8,10 @@ def multi(x, y):
     return x * y
     
 def div(x ,y):
-    return x / y
+    if y == 0:
+        return "Error! Division by zero
+    else:
+        return x / y
 
 def expo(x ,y):
     return x**y
