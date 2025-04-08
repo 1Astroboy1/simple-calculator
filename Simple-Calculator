@@ -10,6 +10,9 @@ def multi(x, y):
 def div(x ,y):
     return x / y
 
+def expo(x ,y):
+    return x**y
+
 # -----------------------------------------------------------------------
 
 print("1.Add")
@@ -20,7 +23,7 @@ print("4.Divide")
 while True:
     choice1 = input("Please enter operation (1/2/3/4) :")
     
-    if choice1 in ("1", "2", "3", "4"):
+    if choice1 in ("1", "2", "3", "4", "5"):
         try:
             num1 = float(input("Please enter first number : "))
             num2 = float(input("Please enter second number : "))
@@ -39,8 +42,10 @@ while True:
             
         elif choice1 == "4":
             print(num1, "/", num2, "=", div(num1, num2))
-            
-        
+
+        elif choice1 == "5":
+            print(num1, "**", num2, "=", expo(num1, num2))
+
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
             break
